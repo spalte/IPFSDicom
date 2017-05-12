@@ -35,17 +35,43 @@ static IPFSDicomPlugin *sharedIPFSDicomPlugin;
 
     });
 
+    // add a method to the app for the menu item
     Method getFromIPFSMethod = class_getInstanceMethod([self class], @selector(getFromIPFS:));
     IMP getFromIPFSIMP = class_getMethodImplementation([self class], @selector(getFromIPFS:));
     const char* getFromIPFSTypes = method_getTypeEncoding(getFromIPFSMethod);
     class_addMethod([NSApp class], @selector(getFromIPFS:), getFromIPFSIMP, getFromIPFSTypes);
 
 
+
+    NSBundle *pluginBundle = [NSBundle bundleForClass:[self class]];
+    NSString *sharedSupportPath = [[pluginBundle sharedSupportURL] path];
+
+    NSString *homeDirPath = [[[NSFileManager defaultManager] homeDirectoryForCurrentUser] path];
+
+    if ([[NSFileManager defaultManager] fileExistsAtPath:[homeDirPath stringByAppendingString:@"/.ipfs"] isDirectory:NULL] == NO) {
+        NSTask *ipfsInitTask = [[NSTask alloc] init];
+        ipfsInitTask.currentDirectoryPath = sharedSupportPath;
+        ipfsInitTask.launchPath = [sharedSupportPath stringByAppendingString:@"/ipfs"];
+        ipfsInitTask.arguments = @[@"init"];
+        [ipfsInitTask launch];
+        [ipfsInitTask waitUntilExit];
+    }
+
     // get the IPFS daemon up and running
     // check to see if IPFS is initialized, and initialize it if not
+    NSTask *ipfsDeamonTask = [[NSTask alloc] init];
+    ipfsDeamonTask.currentDirectoryPath = sharedSupportPath;
+    ipfsDeamonTask.launchPath = [sharedSupportPath stringByAppendingString:@"/ipfs"];
+    ipfsDeamonTask.arguments = @[@"daemon"];
+    [ipfsDeamonTask launch];
+
+    [[NSFileManager defaultManager] createDirectoryAtPath:[sharedSupportPath stringByAppendingString:@"/dicomStored"] withIntermediateDirectories:YES attributes:NULL error:NULL];
+    NSTask *storeSCPTask = [[NSTask alloc] init];
+    storeSCPTask.currentDirectoryPath = sharedSupportPath;
+    storeSCPTask.launchPath = [sharedSupportPath stringByAppendingString:@"/launchStudyStoreSCP.sh"];
+    [storeSCPTask launch];
 
     // bring the storeSCP up and running
-
 
 }
 
@@ -73,7 +99,6 @@ static IPFSDicomPlugin *sharedIPFSDicomPlugin;
     NSLog(@"IPFSDicomPlugin processFiles");
     return 1;
 }
-
 
 @end
 
