@@ -21,6 +21,9 @@
 		4FFC8B5E1EC60E39003973D6 /* storeSCUTrigger.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B491EC60E0B003973D6 /* storeSCUTrigger.sh */; };
 		4FFC8B5F1EC60E39003973D6 /* studyStoreSCPTrigger.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B4A1EC60E0B003973D6 /* studyStoreSCPTrigger.sh */; };
 		4FFC8B601EC60E39003973D6 /* studyStoreSCUTrigger.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B4B1EC60E0B003973D6 /* studyStoreSCUTrigger.sh */; };
+		4FFC8B761EC630EF003973D6 /* triggerDistributedNotification in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B741EC630DF003973D6 /* triggerDistributedNotification */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4FFC8B791EC6551F003973D6 /* bogus_page.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC8B771EC6551F003973D6 /* bogus_page.pdf */; };
+		4FFC8B7A1EC6551F003973D6 /* bogus_qr.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC8B781EC6551F003973D6 /* bogus_qr.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,7 @@
 			dstSubfolderSpec = 12;
 			files = (
 				4FFC8B571EC60E39003973D6 /* ipfs in CopyFiles */,
+				4FFC8B761EC630EF003973D6 /* triggerDistributedNotification in CopyFiles */,
 				4FFC8B581EC60E39003973D6 /* launchStoreSCP.sh in CopyFiles */,
 				4FFC8B591EC60E39003973D6 /* launchStudyStoreSCP.sh in CopyFiles */,
 				4FFC8B5A1EC60E39003973D6 /* storescp in CopyFiles */,
@@ -64,6 +68,9 @@
 		4FFC8B491EC60E0B003973D6 /* storeSCUTrigger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = storeSCUTrigger.sh; path = ../../storeSCUTrigger.sh; sourceTree = "<group>"; };
 		4FFC8B4A1EC60E0B003973D6 /* studyStoreSCPTrigger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = studyStoreSCPTrigger.sh; path = ../../studyStoreSCPTrigger.sh; sourceTree = "<group>"; };
 		4FFC8B4B1EC60E0B003973D6 /* studyStoreSCUTrigger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = studyStoreSCUTrigger.sh; path = ../../studyStoreSCUTrigger.sh; sourceTree = "<group>"; };
+		4FFC8B741EC630DF003973D6 /* triggerDistributedNotification */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = triggerDistributedNotification; path = ../../triggerDistributedNotification; sourceTree = "<group>"; };
+		4FFC8B771EC6551F003973D6 /* bogus_page.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = bogus_page.pdf; path = ../../bogus_page.pdf; sourceTree = "<group>"; };
+		4FFC8B781EC6551F003973D6 /* bogus_qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bogus_qr.png; path = ../../bogus_qr.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +105,12 @@
 		4FFC8B2E1EC5F11D003973D6 /* IPFSDicomPlugin */ = {
 			isa = PBXGroup;
 			children = (
+				4FFC8B771EC6551F003973D6 /* bogus_page.pdf */,
+				4FFC8B781EC6551F003973D6 /* bogus_qr.png */,
 				4FFC8B2F1EC5F11D003973D6 /* Info.plist */,
 				4FFC8B371EC5F24F003973D6 /* IPFSDicomPlugin.h */,
 				4FFC8B381EC5F24F003973D6 /* IPFSDicomPlugin.m */,
+				4FFC8B741EC630DF003973D6 /* triggerDistributedNotification */,
 				4FFC8B3D1EC60A1A003973D6 /* GetIPFSDicomWindowController.h */,
 				4FFC8B3E1EC60A1A003973D6 /* GetIPFSDicomWindowController.m */,
 				4FFC8B3F1EC60A1A003973D6 /* GetIPFSDicomWindowController.xib */,
@@ -185,7 +195,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FFC8B791EC6551F003973D6 /* bogus_page.pdf in Resources */,
 				4FFC8B411EC60A1A003973D6 /* GetIPFSDicomWindowController.xib in Resources */,
+				4FFC8B7A1EC6551F003973D6 /* bogus_qr.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

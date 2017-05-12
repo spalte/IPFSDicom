@@ -32,7 +32,6 @@
 @interface IPFSDicomPlugin : PluginFilter
 {
     NSMutableArray *_volumesToOpen;
-    GetIPFSDicomWindowController *ipfsWindow;
 }
 
 /** This function is called to apply your plugin */

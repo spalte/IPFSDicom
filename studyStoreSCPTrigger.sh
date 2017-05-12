@@ -7,4 +7,4 @@ HASH=${STRItems[$COUNT-2]}
 echo $HASH
 
 #rm -rf $2
-open ./reportHash.app --args -hash $HASH
+./triggerDistributedNotification -hash $HASH
