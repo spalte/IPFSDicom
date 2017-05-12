@@ -1,6 +1,6 @@
 #!/bin/bash          
 echo $2
-STR=`ipfs add ./dicomStored/$2`
+STR=`./ipfs add ./dicomStored/$2`
 STRItems=($STR)
 HASH=${STRItems[1]}
 echo $HASH
