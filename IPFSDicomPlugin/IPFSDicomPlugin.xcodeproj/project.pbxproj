@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4FFC8B391EC5F24F003973D6 /* IPFSDicomPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC8B381EC5F24F003973D6 /* IPFSDicomPlugin.m */; };
+		4FFC8B3C1EC5F36A003973D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFC8B3B1EC5F36A003973D6 /* Cocoa.framework */; };
+		4FFC8B401EC60A1A003973D6 /* GetIPFSDicomWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC8B3E1EC60A1A003973D6 /* GetIPFSDicomWindowController.m */; };
+		4FFC8B411EC60A1A003973D6 /* GetIPFSDicomWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC8B3F1EC60A1A003973D6 /* GetIPFSDicomWindowController.xib */; };
+		4FFC8B571EC60E39003973D6 /* ipfs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B421EC60E0B003973D6 /* ipfs */; };
+		4FFC8B581EC60E39003973D6 /* launchStoreSCP.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B431EC60E0B003973D6 /* launchStoreSCP.sh */; };
+		4FFC8B591EC60E39003973D6 /* launchStudyStoreSCP.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B441EC60E0B003973D6 /* launchStudyStoreSCP.sh */; };
+		4FFC8B5A1EC60E39003973D6 /* storescp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B451EC60E0B003973D6 /* storescp */; };
+		4FFC8B5B1EC60E39003973D6 /* storescp.cfg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B461EC60E0B003973D6 /* storescp.cfg */; };
+		4FFC8B5C1EC60E39003973D6 /* storeSCPTrigger.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B471EC60E0B003973D6 /* storeSCPTrigger.sh */; };
+		4FFC8B5D1EC60E39003973D6 /* storescu in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B481EC60E0B003973D6 /* storescu */; };
+		4FFC8B5E1EC60E39003973D6 /* storeSCUTrigger.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B491EC60E0B003973D6 /* storeSCUTrigger.sh */; };
+		4FFC8B5F1EC60E39003973D6 /* studyStoreSCPTrigger.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B4A1EC60E0B003973D6 /* studyStoreSCPTrigger.sh */; };
+		4FFC8B601EC60E39003973D6 /* studyStoreSCUTrigger.sh in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4FFC8B4B1EC60E0B003973D6 /* studyStoreSCUTrigger.sh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4FFC8B561EC60E1E003973D6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 12;
+			files = (
+				4FFC8B571EC60E39003973D6 /* ipfs in CopyFiles */,
+				4FFC8B581EC60E39003973D6 /* launchStoreSCP.sh in CopyFiles */,
+				4FFC8B591EC60E39003973D6 /* launchStudyStoreSCP.sh in CopyFiles */,
+				4FFC8B5A1EC60E39003973D6 /* storescp in CopyFiles */,
+				4FFC8B5B1EC60E39003973D6 /* storescp.cfg in CopyFiles */,
+				4FFC8B5C1EC60E39003973D6 /* storeSCPTrigger.sh in CopyFiles */,
+				4FFC8B5D1EC60E39003973D6 /* storescu in CopyFiles */,
+				4FFC8B5E1EC60E39003973D6 /* storeSCUTrigger.sh in CopyFiles */,
+				4FFC8B5F1EC60E39003973D6 /* studyStoreSCPTrigger.sh in CopyFiles */,
+				4FFC8B601EC60E39003973D6 /* studyStoreSCUTrigger.sh in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4FFC8B2C1EC5F11D003973D6 /* IPFSDicomPlugin.osirixplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPFSDicomPlugin.osirixplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FFC8B2F1EC5F11D003973D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FFC8B371EC5F24F003973D6 /* IPFSDicomPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPFSDicomPlugin.h; sourceTree = "<group>"; };
+		4FFC8B381EC5F24F003973D6 /* IPFSDicomPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPFSDicomPlugin.m; sourceTree = "<group>"; };
+		4FFC8B3B1EC5F36A003973D6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4FFC8B3D1EC60A1A003973D6 /* GetIPFSDicomWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetIPFSDicomWindowController.h; sourceTree = "<group>"; };
+		4FFC8B3E1EC60A1A003973D6 /* GetIPFSDicomWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetIPFSDicomWindowController.m; sourceTree = "<group>"; };
+		4FFC8B3F1EC60A1A003973D6 /* GetIPFSDicomWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GetIPFSDicomWindowController.xib; sourceTree = "<group>"; };
+		4FFC8B421EC60E0B003973D6 /* ipfs */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = ipfs; path = ../../ipfs; sourceTree = "<group>"; };
+		4FFC8B431EC60E0B003973D6 /* launchStoreSCP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = launchStoreSCP.sh; path = ../../launchStoreSCP.sh; sourceTree = "<group>"; };
+		4FFC8B441EC60E0B003973D6 /* launchStudyStoreSCP.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = launchStudyStoreSCP.sh; path = ../../launchStudyStoreSCP.sh; sourceTree = "<group>"; };
+		4FFC8B451EC60E0B003973D6 /* storescp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = storescp; path = ../../storescp; sourceTree = "<group>"; };
+		4FFC8B461EC60E0B003973D6 /* storescp.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = storescp.cfg; path = ../../storescp.cfg; sourceTree = "<group>"; };
+		4FFC8B471EC60E0B003973D6 /* storeSCPTrigger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = storeSCPTrigger.sh; path = ../../storeSCPTrigger.sh; sourceTree = "<group>"; };
+		4FFC8B481EC60E0B003973D6 /* storescu */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = storescu; path = ../../storescu; sourceTree = "<group>"; };
+		4FFC8B491EC60E0B003973D6 /* storeSCUTrigger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = storeSCUTrigger.sh; path = ../../storeSCUTrigger.sh; sourceTree = "<group>"; };
+		4FFC8B4A1EC60E0B003973D6 /* studyStoreSCPTrigger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = studyStoreSCPTrigger.sh; path = ../../studyStoreSCPTrigger.sh; sourceTree = "<group>"; };
+		4FFC8B4B1EC60E0B003973D6 /* studyStoreSCUTrigger.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = studyStoreSCUTrigger.sh; path = ../../studyStoreSCUTrigger.sh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FFC8B291EC5F11D003973D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FFC8B3C1EC5F36A003973D6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FFC8B231EC5F11D003973D6 = {
+			isa = PBXGroup;
+			children = (
+				4FFC8B2E1EC5F11D003973D6 /* IPFSDicomPlugin */,
+				4FFC8B2D1EC5F11D003973D6 /* Products */,
+				4FFC8B3A1EC5F369003973D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FFC8B2D1EC5F11D003973D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FFC8B2C1EC5F11D003973D6 /* IPFSDicomPlugin.osirixplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FFC8B2E1EC5F11D003973D6 /* IPFSDicomPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				4FFC8B2F1EC5F11D003973D6 /* Info.plist */,
+				4FFC8B371EC5F24F003973D6 /* IPFSDicomPlugin.h */,
+				4FFC8B381EC5F24F003973D6 /* IPFSDicomPlugin.m */,
+				4FFC8B3D1EC60A1A003973D6 /* GetIPFSDicomWindowController.h */,
+				4FFC8B3E1EC60A1A003973D6 /* GetIPFSDicomWindowController.m */,
+				4FFC8B3F1EC60A1A003973D6 /* GetIPFSDicomWindowController.xib */,
+				4FFC8B421EC60E0B003973D6 /* ipfs */,
+				4FFC8B431EC60E0B003973D6 /* launchStoreSCP.sh */,
+				4FFC8B441EC60E0B003973D6 /* launchStudyStoreSCP.sh */,
+				4FFC8B451EC60E0B003973D6 /* storescp */,
+				4FFC8B461EC60E0B003973D6 /* storescp.cfg */,
+				4FFC8B471EC60E0B003973D6 /* storeSCPTrigger.sh */,
+				4FFC8B481EC60E0B003973D6 /* storescu */,
+				4FFC8B491EC60E0B003973D6 /* storeSCUTrigger.sh */,
+				4FFC8B4A1EC60E0B003973D6 /* studyStoreSCPTrigger.sh */,
+				4FFC8B4B1EC60E0B003973D6 /* studyStoreSCUTrigger.sh */,
+			);
+			path = IPFSDicomPlugin;
+			sourceTree = "<group>";
+		};
+		4FFC8B3A1EC5F369003973D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FFC8B3B1EC5F36A003973D6 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FFC8B2B1EC5F11D003973D6 /* IPFSDicomPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FFC8B321EC5F11D003973D6 /* Build configuration list for PBXNativeTarget "IPFSDicomPlugin" */;
+			buildPhases = (
+				4FFC8B281EC5F11D003973D6 /* Sources */,
+				4FFC8B291EC5F11D003973D6 /* Frameworks */,
+				4FFC8B2A1EC5F11D003973D6 /* Resources */,
+				4FFC8B561EC60E1E003973D6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPFSDicomPlugin;
+			productName = IPFSDicomPlugin;
+			productReference = 4FFC8B2C1EC5F11D003973D6 /* IPFSDicomPlugin.osirixplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FFC8B241EC5F11D003973D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Spaltenstein Natural Image";
+				TargetAttributes = {
+					4FFC8B2B1EC5F11D003973D6 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X85H97S9M3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4FFC8B271EC5F11D003973D6 /* Build configuration list for PBXProject "IPFSDicomPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4FFC8B231EC5F11D003973D6;
+			productRefGroup = 4FFC8B2D1EC5F11D003973D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FFC8B2B1EC5F11D003973D6 /* IPFSDicomPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FFC8B2A1EC5F11D003973D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FFC8B411EC60A1A003973D6 /* GetIPFSDicomWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FFC8B281EC5F11D003973D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FFC8B391EC5F24F003973D6 /* IPFSDicomPlugin.m in Sources */,
+				4FFC8B401EC60A1A003973D6 /* GetIPFSDicomWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4FFC8B301EC5F11D003973D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4FFC8B311EC5F11D003973D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4FFC8B331EC5F11D003973D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X85H97S9M3;
+				INFOPLIST_FILE = IPFSDicomPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.naturalimage.IPFSDicomPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = osirixplugin;
+			};
+			name = Debug;
+		};
+		4FFC8B341EC5F11D003973D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X85H97S9M3;
+				INFOPLIST_FILE = IPFSDicomPlugin/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ch.naturalimage.IPFSDicomPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = osirixplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FFC8B271EC5F11D003973D6 /* Build configuration list for PBXProject "IPFSDicomPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFC8B301EC5F11D003973D6 /* Debug */,
+				4FFC8B311EC5F11D003973D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FFC8B321EC5F11D003973D6 /* Build configuration list for PBXNativeTarget "IPFSDicomPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFC8B331EC5F11D003973D6 /* Debug */,
+				4FFC8B341EC5F11D003973D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FFC8B241EC5F11D003973D6 /* Project object */;
+}
